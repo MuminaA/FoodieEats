@@ -18,169 +18,231 @@
   </head>
   <body>
     <!-- nav bar -->
-      <div class="background-img"></div>
-      <nav class="navbar fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-handle">
-            <div>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div>
-              <h3 class="navbar company-name">Foodie<span>Eats</span></h3>
-            </div>
-          </div>
-
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="d-grid gap-2 col-9 mx-auto account-buttons">
-              <button type="button" class="btn btn-dark account-btn-dark">
-                Sign up
-              </button>
-              <button type="button" class="btn btn-light account-btn-light">
-                Log in
-              </button>
-            </div>
-            <div class="offcanvas-body mx-auto">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Create a business account</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Add your restaurant</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sign up to deliver</a>
-                </li>
-              </ul>
-            </div>
-            <div class="app-section">
-              <div class="app-slogan">
-                <div class="app-img">
-                  <img src="images/fOOdie.png" class="company-img" />
-                </div>
-                <div><p>There's more to love in the app.</p></div>
-              </div>
-              <div class="company-app">
-                <div class="apple">
-                  <button type="button" class="btn btn-light apple-app">
-                    <i class="fa-brands fa-apple apple-icon"></i> iPhone
-                  </button>
-                </div>
-                <div class="android">
-                  <button type="button" class="btn btn-light android-app">
-                    <img src="images/android-logo.png" class="android-icon" />
-                    Android
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="navbar-brand">
+    <div class="background-img"></div>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-handle">
+          <div>
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn btn-light btn-white outside-button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
             >
-              <i class="fa-solid fa-user"></i> Log in
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <button type="button" class="btn btn-dark outside-button">
-              <i></i>Sign up
-            </button>
+          </div>
+          <div>
+            <h3 class="navbar company-name">Foodie<span>Eats</span></h3>
           </div>
         </div>
-      </nav>
-      <section id="title-page" class="container-fluid">
-        <h1>Order food to your door</h1>
-        <div class="location-container">
-          <div id="address-container">
-            <div class="address-container">
-              <div class="location-icon">
-                <i class="fa-sharp fa-solid fa-location-dot"></i>
-              </div>
-              <input
-                type="text"
-                placeholder="Enter delivery address"
-                class="delivery-input"
-              />
-            </div>
-          </div>
-          <div class="dropdown">
-            <a
-              class="btn btn-secondary dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              ><i class="fa-sharp fa-solid fa-clock"></i>
-              Deliver now
-            </a>
 
-            <ul class="dropdown-menu">
-              <div>
-                <li class="deliver-container">
-                  <a class="dropdown-item" href="#"
-                    ><i class="fa-sharp fa-solid fa-clock"></i>Deliver now</a
-                  >
-                </li>
-              </div>
-              <div>
-                <li class="schedule-container">
-                  <a class="dropdown-item" href="#"
-                    ><i class="fa-solid fa-calendar-day"></i>Schedule for
-                    later</a
-                  >
-                </li>
-              </div>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="d-grid gap-2 col-9 mx-auto account-buttons">
+            <button type="button" class="btn btn-dark account-btn-dark">
+              Sign up
+            </button>
+            <button type="button" class="btn btn-light account-btn-light">
+              Log in
+            </button>
+          </div>
+          <div class="offcanvas-body mx-auto">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Create a business account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Add your restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign up to deliver</a>
+              </li>
             </ul>
           </div>
-          <button class="location-button btn btn-dark">Find Food</button>
-        </div>
-        <div class="sign-in">
-          <p><a href="#">Sign in</a> for your recent addresses</p>
-        </div>
-      </section>
-      <!-- secound section -->
-      <section id="second-section" class="container-fluid">
-        <div class="feature-section">
-          <div class="grid-container">
-            <div class="grid-item business-account">
-              <div class="grid-img"><img src="images/Bustling-food-market.png" /></div>
-              <p>Feed your employees</p>
-              <a href="#">Create a business account</a>
+          <div class="app-section">
+            <div class="app-slogan">
+              <div class="app-img">
+                <img src="images/fOOdie.png" class="company-img" />
+              </div>
+              <div><p>There's more to love in the app.</p></div>
             </div>
-            <div class="grid-item add-resturant">
-              <div class="grid-img"><img src="images/cook.png" /></div>
-              <p>Your restaurant, delivered</p>
-              <a href="#">Add your restaurant</a>
-            </div>
-            <div class="grid-item devlivery-job">
-              <div class="grid-img"><img src="images/delivery.png" /></div>
-              <p>Deliver with Foodie Eats</p>
-              <a href="#">Sign up to deliver</a>
+            <div class="company-app">
+              <div class="apple">
+                <button type="button" class="btn btn-light apple-app">
+                  <i class="fa-brands fa-apple apple-icon"></i> iPhone
+                </button>
+              </div>
+              <div class="android">
+                <button type="button" class="btn btn-light android-app">
+                  <img src="images/android-logo.png" class="android-icon" />
+                  Android
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="map-location">
-            <div class="map-heading">
-              <h2>Cities near me</h2>
-              <a href="#">View all 500+ cities</a>
+        <div class="navbar-brand">
+          <button type="button" class="btn btn-light btn-white outside-button">
+            <i class="fa-solid fa-user"></i> Log in
+          </button>
+          <button type="button" class="btn btn-dark outside-button">
+            <i></i>Sign up
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section id="title-page" class="container-fluid">
+      <h1>Order food to your door</h1>
+      <div class="location-container">
+        <div id="address-container">
+          <div class="address-container">
+            <div class="location-icon">
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
             </div>
-            <div calss="map">
-              <img src="images/map.png" class="map-img" />
-            </div>
+            <input
+              type="text"
+              placeholder="Enter delivery address"
+              class="delivery-input"
+            />
           </div>
-      </section>
+        </div>
+        <div class="dropdown">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="fa-sharp fa-solid fa-clock"></i>
+            Deliver now
+          </a>
+
+          <ul class="dropdown-menu">
+            <div>
+              <li class="deliver-container">
+                <a class="dropdown-item" href="#"
+                  ><i class="fa-sharp fa-solid fa-clock"></i>Deliver now</a
+                >
+              </li>
+            </div>
+            <div>
+              <li class="schedule-container">
+                <a class="dropdown-item" href="#"
+                  ><i class="fa-solid fa-calendar-day"></i>Schedule for later</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+        <button class="location-button btn btn-dark">Find Food</button>
+      </div>
+      <div class="sign-in">
+        <p><a href="#">Sign in</a> for your recent addresses</p>
+      </div>
+    </section>
+    <!-- secound section -->
+    <section id="second-section" class="container-fluid">
+      <div class="feature-section">
+        <div class="grid-container">
+          <div class="grid-item business-account">
+            <div class="grid-img">
+              <img src="images/Bustling-food-market.png" />
+            </div>
+            <p>Feed your employees</p>
+            <a href="#">Create a business account</a>
+          </div>
+          <div class="grid-item add-resturant">
+            <div class="grid-img"><img src="images/cook.png" /></div>
+            <p>Your restaurant, delivered</p>
+            <a href="#">Add your restaurant</a>
+          </div>
+          <div class="grid-item devlivery-job">
+            <div class="grid-img"><img src="images/delivery.png" /></div>
+            <p>Deliver with Foodie Eats</p>
+            <a href="#">Sign up to deliver</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-location">
+        <div class="cities-heading">
+          <h2>Cities near me</h2>
+          <a href="#">View all 500+ cities</a>
+        </div>
+        <div calss="map">
+          <img src="images/map.png" class="map-img" />
+        </div>
+      </div>
+      <div class="cities-list">
+        <div class="list">Akron</div>
+        <div class="list">Albuquerque</div>
+        <div class="list">Bridgeport</div>
+        <div class="list">Concord</div>
+        <div class="list">Dayton</div>
+        <div class="list">El Paso</div>
+        <div class="list">Hartford</div>
+        <div class="list">Houston</div>
+        <div class="list">Indianapolis</div>
+        <div class="list">McAllen</div>
+        <div class="list">Mesa</div>
+        <div class="list">Milwaukee</div>
+        <div class="list">Nashvillie</div>
+        <div class="list">New orleans</div>
+        <div class="list">Oklahoma City</div>
+        <div class="list">Omaha</div>
+        <div class="list">Orlando</div>
+        <div class="list">Palm Bay</div>
+        <div class="list">Providence</div>
+        <div class="list">Queens</div>
+        <div class="list">San Antonio</div>
+        <div class="list">Stony Brook</div>
+        <div class="list">Tucson</div>
+        <div class="list">West Hollywood</div>
+      </div>
+      <div class="cities-heading">
+        <h2>Countries with Foodies Eats</h2>
+        <a href="#">View all countries</a>
+    </div>
+    <div class="countries-list">
+        <div class="list">Australia</div>
+        <div class="list">Belgium</div>
+        <div class="list">Canada</div>
+        <div class="list">Chile</div>
+        <div class="list">Costa Rica</div>
+        <div class="list">Dominican Republic</div>
+        <div class="list">Ecuador</div>
+        <div class="list">El Salvador</div>
+        <div class="list">France</div>
+        <div class="list">Germany</div>
+        <div class="list">Guatamala</div>
+        <div class="list">Ireland</div>
+        <div class="list">Italy</div>
+        <div class="list">Japan</div>
+        <div class="list">Kenya</div>
+        <div class="list">Mexico</div>
+        <div class="list">Netherlands</div>
+        <div class="list">New Zealand</div>
+        <div class="list">Panama</div>
+        <div class="list">Poland</div>
+        <div class="list">Portugal</div>
+        <div class="list">South Africa</div>
+        <div class="list">Spain</div>
+        <div class="list">Sri Lanka</div>
+        <div class="list">Sweden</div>
+        <div class="list">Switzerland</div>
+        <div class="list">Taiwan (ROC)</div>
+        <div class="list">United Kingdom</div>
+        <div class="list">United States</div>
+      </div>
+    </section>
+    <footer>
+        <div></div>
+    </footer>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/80aada6d6e.js"
