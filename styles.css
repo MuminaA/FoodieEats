@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+
+/* resets */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(images/Food.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Slab', serif;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+.container-fluid {
+    padding-left: 1.7rem;
+    padding-right: 3rem;
+} 
+
+/* navbar */
+
+.navbar {
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+}
+
+.navbar-handle {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1rem; 
+}
+
+.company-name {
+    padding-left: 3%;
+    display: inline-block;
+    margin: 0;
+}
+
+.outside-button {
+    border-radius: 2rem;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.offcanvas.offcanvas-start {
+    width: 275px;
+}
+
+.account-buttons {
+    margin-top: 25px;
+}
+
+.account-btn-dark, 
+.account-btn-light {
+    padding: 10px 0;
+}
+
+.btn-light {
+    background-color: #eaebec;
+}
+
+.app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem 5rem;
+}
+
+.app-slogan {
+    display: flex;
+    text-align: left;
+    gap: 5%;
+}
+
+.app-img {
+    width: 5rem;
+}
+
+.company-img {
+    border-radius: 15%;
+}
+
+.company-app {
+    display: flex;
+    align-self: start;
+    padding-top: 10px;
+    gap: 5%;
+}
+
+.apple-app {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    
+}
+
+.android-app {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.android-icon {
+    width: 16px;
+}
+
+span {
+    padding-left: 6px;
+    font-weight: 600;
+}
+
+/* title page */
+
