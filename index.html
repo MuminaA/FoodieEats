@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section id="title-page">
+    <!-- nav bar -->
+    <main>
       <nav class="navbar fixed-top">
         <div class="container-fluid">
           <div class="navbar-handle">
@@ -99,12 +100,57 @@
           </div>
         </div>
       </nav>
+      <section id="title-page" class="container-fluid">
+        <h1>Order food to your door</h1>
+        <div class="location-container">
+          <div id="address-container">
+            <div class="address-container">
+              <div class="location-icon">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+              </div>
+              <input
+                type="text"
+                placeholder="Enter delivery address"
+                class="delivery-input"
+              />
+            </div>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-sharp fa-solid fa-clock"></i>
+              Deliver now
+            </a>
 
-      <!-- <h1>Order food to your door</h1>
-    <input type="" /><input type="" /><button></button>
-    <p><a>Sign in</a> for your recent addresses</p> -->
-    </section>
-
+            <ul class="dropdown-menu">
+              <div>
+                <li class="deliver-container">
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-sharp fa-solid fa-clock"></i>Deliver now</a
+                  >
+                </li>
+              </div>
+              <div>
+                <li class="schedule-container">
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-calendar-day"></i>Schedule for
+                    later</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+          <button class="location-button btn btn-dark">Find Food</button>
+        </div>
+        <div class="sign-in">
+          <p><a href="">Sign in</a> for your recent addresses</p>
+        </div>
+      </section>
+    </main>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/80aada6d6e.js"

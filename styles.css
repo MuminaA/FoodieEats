@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 /* resets */
 
@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
   }
   /*
     6. Improve media defaults
@@ -61,6 +61,8 @@
 .navbar {
     padding-top: 1.2%;
     padding-bottom: 1.2%;
+    /* background-color: purple; */
+    
 }
 
 .navbar-handle {
@@ -70,7 +72,9 @@
 
 .navbar-toggler {
     border: none;
-    font-size: 1rem; 
+    font-size: 1rem;
+    padding-left: 0;
+    --bs-navbar-toggler-focus-width: 0rem;
 }
 
 .company-name {
@@ -102,6 +106,14 @@
 .account-btn-dark, 
 .account-btn-light {
     padding: 10px 0;
+}
+
+.nav-link {
+    color:black;
+}
+
+.nav-link:hover {
+    color:black;
 }
 
 .btn-light {
@@ -165,3 +177,95 @@ span {
 
 /* title page */
 
+#title-page {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    gap: .5%;
+    padding-bottom: 15px;
+}
+
+#address-container  {
+    background-color: white;
+    padding: 12px 0 12px 12px;
+    width: 600px;
+}
+
+.address-container {
+    display: flex;
+}
+
+.location-icon {
+    padding: 3px 10px;
+}
+
+.delivery-input {
+    border: none;
+    width: 540px;
+    padding-left: 2%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.dropdown-toggle {
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+
+.dropdown-toggle:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-secondary {
+    --bs-btn-active-bg: white;
+    --bs-btn-active-color: black;
+    --bs-btn-border-width: 0;
+    --bs-btn-border-radius: 0;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--bs-tertiary-bg);
+    border-radius: 0;
+    border: none;
+}
+
+.dropdown ul[style] {
+    transform: translate(0px, 53px) !important;
+    box-shadow: 0 -1px 2px rgb(240, 240, 240);
+}
+
+.deliver-container i {
+    padding-right: 4px;
+}
+
+.schedule-container i {
+    padding-right: 4px;
+}
+
+.location-button {
+    padding: 15px;
+    border:none;
+    font-weight: 700;
+}
+
+.sign-in a:visited{
+    color: black;
+}
