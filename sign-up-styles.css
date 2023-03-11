@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/* resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+      7. Remove built-in form typography styles
+    */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+      8. Avoid text overflows
+    */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* headers */
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* navbar */
+
+.container-fluid {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+}
+
+span {
+  color: rgb(2, 197, 2);
+  font-weight: 700;
+}
+
+form {
+    min-height: 85vh;
+    display: grid;
+    place-content: center;   
+}
+
+.form-container {
+    width: 350px;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 18px;
+    padding-left: 15px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 7px;
+}
+
+button {
+    width: 350px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.continue {
+    background-color: black;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.rounded {
+    margin-bottom: 10px;
+}
+.divider {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #AFAFAF;; 
+    line-height: 0.1em;
+    margin: 10px 0 10px;
+ } 
+ 
+.or-divider { 
+     background:#fff; 
+     padding:0 10px; 
+     color: #AFAFAF;
+     font-weight: normal;
+    font-size: 13px;
+ }
+
+ .icon {
+    margin-top: 16px;
+ }
+
+p {
+    color: #6B6B6B;
+    font-size: 12px;
+    padding-right: 16px;
+    line-height: 20px
+}
+
+.para-container{
+    margin-bottom: 70px;
+}
+
+.link {
+    color: black;
+}
+
+
