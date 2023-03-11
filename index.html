@@ -143,7 +143,7 @@
         <button class="location-button btn btn-dark">Find Food</button>
       </div>
       <div class="sign-in">
-        <p><a href="#">Sign in</a> for your recent addresses</p>
+        <p><a href="sign-page.html">Sign in</a> for your recent addresses</p>
       </div>
     </section>
     <!-- secound section -->
@@ -277,7 +277,7 @@
             <li><a href="#" class="link1">View all countries</a></li>
             <li><a href="#" class="link1">Pickup near me</a></li>
             <li><a href="#" class="link1">About Foodie Eats</a></li>
-            <li><a href="#" class="link1"><img src="images/language-icon.png" class="language-icon">English</a></li>
+            <li><button  class="link1 open-button"><img src="images/language-icon.png" class="language-icon">English</button></li>
           </ul>
         </div>
       </div>
@@ -315,6 +315,14 @@
         </div>
       </div>
     </footer>
+    <dialog class="modal" id="modal">
+      <button class="button close-button">close modal</button>
+      <h2>Select a language</h2>
+      <p>English</p>
+      <p>Spanish</p>
+    </dialog>
+
+    <script src="app.js"></script>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/80aada6d6e.js"
@@ -326,5 +334,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>
