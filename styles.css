@@ -101,6 +101,9 @@ h2 {
   padding-top: 1.2%;
   padding-bottom: 1.2%;
   /* background-color: purple; */
+  transition-property: color;
+  transition-duration: .5s;
+  transition: ease-in-out;
 }
 
 .navbar-handle {
@@ -451,13 +454,57 @@ a:visited {
 
 /* language prompt */
 
-.modal {
-  /* padding: 1em; */
-  max-width: 60%;
-  border: 0;
-  z-index: 999;
+.unhidden {
+  display: block;
 }
 
-.modal::backdrop {
-  background: rgb(0 0 0 / 0.4);
+.modal {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  justify-content: left;
+  background-color: white;
+  width: 470px;
+  height: 250px;
+  border: none;
+  border-radius: 0;
+  padding: 20px;
+  top: 70px;
+}
+
+.language {
+  margin-bottom: 20px;
+}
+
+.close-button {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: none;
+  width: 25px;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.en-lang{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(30, 126, 94);
+}
+
+.fa-check {
+  font-size: 25px;
+}
+
+.modal-content a {
+  cursor: pointer;
+}
+
+.navbar-white {
+  background-color: rgba(255, 255, 255) !important;
+  color: #000000 !important;
 }

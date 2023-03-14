@@ -88,15 +88,23 @@
           </div>
         </div>
         <div class="navbar-brand">
-          <a href="sign-page.html"><button type="button" class="btn btn-light btn-white outside-button">
-            <i class="fa-solid fa-user"></i> Log in
-          </button></a>
-          <a href="sign-page.html"><button type="button" class="btn btn-dark outside-button">
-            <i></i>Sign up
-          </button></a>
+          <a href="sign-page.html"
+            ><button
+              type="button"
+              class="btn btn-light btn-white outside-button"
+            >
+              <i class="fa-solid fa-user"></i> Log in
+            </button></a
+          >
+          <a href="sign-page.html"
+            ><button type="button" class="btn btn-dark outside-button">
+              <i></i>Sign up
+            </button></a
+          >
         </div>
       </div>
     </nav>
+    <!-- <div><input type="text"></div> -->
     <section id="title-page" class="container-fluid">
       <h1>Order food to your door</h1>
       <div class="location-container">
@@ -277,7 +285,14 @@
             <li><a href="#" class="link1">View all countries</a></li>
             <li><a href="#" class="link1">Pickup near me</a></li>
             <li><a href="#" class="link1">About Foodie Eats</a></li>
-            <li><button  class="link1 open-button"><img src="images/language-icon.png" class="language-icon">English</button></li>
+            <li>
+              <button class="link1 open-button">
+                <img
+                  src="images/language-icon.png"
+                  class="language-icon"
+                />English
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -315,12 +330,16 @@
         </div>
       </div>
     </footer>
-    <dialog class="modal" id="modal">
-      <button class="button close-button">close modal</button>
-      <h2>Select a language</h2>
-      <p>English</p>
-      <p>Spanish</p>
-    </dialog>
+    <div class="modal hidden" id="modal">
+      <div class="modal-content">
+        <button class="button close-button"><strong>X</strong></button>
+        <h2 class="language heading">Select a language</h2>
+        <div class="language en-lang"><a >English</a><i class="fa-sharp fa-solid fa-check"></i></div>
+        <div class="language"><a >Español</a></div>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
 
     <script src="app.js"></script>
     <!-- font awesome -->
@@ -334,6 +353,5 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
