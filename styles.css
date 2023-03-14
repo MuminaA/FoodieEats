@@ -100,12 +100,14 @@ h2 {
 .navbar {
   padding-top: 1.2%;
   padding-bottom: 1.2%;
-  /* background-color: purple; */
-  transition-property: color;
-  transition-duration: .5s;
   transition: ease-in-out;
+  transition-duration: .5s;
 }
 
+.navbar-white {
+  background-color: rgba(255, 255, 255);
+  color: #000000;
+}
 .navbar-handle {
   display: flex;
   align-items: center;
@@ -126,6 +128,28 @@ h2 {
 
 .outside-button {
   border-radius: 2rem;
+}
+
+#top-address-container {
+  display: none;
+  background-color: rgb(241, 241, 241);
+  padding: 12px 0 12px 12px;
+  width: 740px;
+  margin-left: 130px;
+  
+  transition-duration: .5s;
+  transition: ease-in-out;
+}
+
+.top-address-container {
+  display: flex;
+}
+
+.top-delivery-input {
+  border: none;
+  width: 680px;
+  padding-left: 2%;
+  background-color: rgb(241, 241, 241);
 }
 
 .navbar-brand {
@@ -373,7 +397,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   gap: 140px;
-  /* justify-content: space-between; */
   flex: 2;
 }
 
@@ -444,6 +467,11 @@ a:visited {
   color: rgb(212, 212, 212);
 }
 
+.open-button {
+  border: none;
+  background-color: transparent;
+}
+
 /* effects */
 
 .link1:hover,
@@ -504,7 +532,3 @@ a:visited {
   cursor: pointer;
 }
 
-.navbar-white {
-  background-color: rgba(255, 255, 255) !important;
-  color: #000000 !important;
-}

@@ -23,6 +23,7 @@ close.addEventListener("click", function() {
 document.onreadystatechange = function() {
   let lastScrollPosition = 0;
   const navbar = document.querySelector('.navbar');
+  let deliveryAddress = document. querySelector("#top-address-container");
   window.addEventListener('scroll', function() {
     lastScrollPosition = window.scrollY;
     
@@ -30,5 +31,11 @@ document.onreadystatechange = function() {
       navbar.classList.add('navbar-white');
     else
       navbar.classList.remove('navbar-white');
+    if (lastScrollPosition > 280) {
+      deliveryAddress.style.display = "block";
+    } else {
+      deliveryAddress.style.display = "none";
+    }
+      
   });
 }
