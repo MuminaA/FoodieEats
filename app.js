@@ -50,11 +50,3 @@ document.onreadystatechange = function () {
     }
   });
 };
-
-// document.mediaStateChange = function() {
-//   const mediaQuery = widow.matchMedia("(max-width: 375px)");
-
-//   if (mediaQuery.matches) {
-
-//   }
-// }

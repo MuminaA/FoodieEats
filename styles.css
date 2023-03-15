@@ -661,25 +661,24 @@ a:visited {
     grid-template-rows: repeat(15, 1fr);
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 5%;
-}
+  }
 
-.app-store {
-  gap: 30px;
-  margin-bottom: 50px;
-}
+  .app-store {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
 
-.link {
-  margin-bottom: 50px;
-}
+  .link {
+    margin-bottom: 50px;
+  }
 
-.s-c {
-  flex-direction: column;
-  padding-bottom: 0;
-}
+  .s-c {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 
-.copywrite {
-  flex-direction: column;
-  gap: 3%;
-}
-
+  .copywrite {
+    flex-direction: column;
+    gap: 3%;
+  }
 }
