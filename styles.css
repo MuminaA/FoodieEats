@@ -104,7 +104,7 @@ a {
   padding-top: 1.2%;
   padding-bottom: 1.2%;
   transition: ease-in-out;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .navbar-white {
@@ -139,8 +139,8 @@ a {
   padding: 12px 0 12px 12px;
   width: 740px;
   margin-left: 130px;
-  
-  transition-duration: .5s;
+
+  transition-duration: 0.5s;
   transition: ease-in-out;
 }
 
@@ -161,6 +161,10 @@ a {
 
 .btn-white {
   background-color: white;
+}
+
+.mobile-button {
+  display: none;
 }
 
 .offcanvas.offcanvas-start {
@@ -361,12 +365,19 @@ a:visited {
 }
 
 /* location section */
+.mobile-a {
+  display: none;
+}
 
 .cities-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 15px;
+}
+
+.mobile-map {
+  display: none;
 }
 
 /* cities list */
@@ -393,7 +404,7 @@ a:visited {
 /* footer */
 .footer-section {
   display: flex;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
 .app-store {
@@ -427,7 +438,7 @@ a:visited {
 
 .language-icon {
   block-size: 19px;
-  padding-right: 5px
+  padding-right: 5px;
 }
 
 .s-c {
@@ -520,7 +531,7 @@ a:visited {
   background-color: transparent;
 }
 
-.en-lang{
+.en-lang {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -535,3 +546,140 @@ a:visited {
   cursor: pointer;
 }
 
+/* responsiveness */
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding-top: 4%;
+  }
+
+  .mobile-button {
+    display: block;
+  }
+
+  .mobile-map {
+    display: block;
+  }
+
+  .desktop-button,
+  .hidden,
+  .desktop-map,
+  .cities-heading a {
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    display: flex;
+    gap: 2%;
+    padding-right: 2%;
+  }
+
+  .mobile-button {
+    padding: 0.1rem 0.4rem;
+  }
+
+  #title-page {
+    top: 150px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .location-container,
+  .terms,
+  .footer-section {
+    flex-direction: column;
+  }
+
+  #address-container {
+    width: 325px;
+    margin-bottom: 2%;
+  }
+
+  .delivery-input {
+    border: none;
+    width: 270px;
+    padding-left: 2%;
+  }
+
+  .dropdown-toggle {
+    margin-bottom: 2%;
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 11.4em;
+  }
+
+  .location-button {
+    padding-top: 10px;
+    padding-right: 125px;
+    padding-left: 130px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: none;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .grid-img {
+    width: 326px;
+    height: 200px;
+  }
+
+  .grid-item > p,
+  .cities-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .grid-item > a {
+    font-size: 0.8rem;
+  }
+
+  .map img {
+    height: 500px;
+  }
+
+  .cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5%;
+  }
+
+  .mobile-a {
+    display: block;
+    padding-bottom: 10%;
+  }
+
+  .countries-list {
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5%;
+}
+
+.app-store {
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.link {
+  margin-bottom: 50px;
+}
+
+.s-c {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.copywrite {
+  flex-direction: column;
+  gap: 3%;
+}
+
+}

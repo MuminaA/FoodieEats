@@ -101,17 +101,31 @@
             </div>
           </div>
         </div>
-        <div class="navbar-brand">
+        <div id="navbar-brand" class="navbar-brand">
           <a href="sign-page.html"
             ><button
               type="button"
-              class="btn btn-light btn-white outside-button"
+              class="btn btn-light btn-white outside-button desktop-button"
             >
               <i class="fa-solid fa-user"></i> Log in
             </button></a
           >
           <a href="sign-page.html"
-            ><button type="button" class="btn btn-dark outside-button">
+            ><button
+              type="button"
+              name="mobile-button"
+              class="btn btn-light btn-white outside-button mobile-button"
+            >
+              <i class="fa-solid fa-user"></i>
+            </button></a
+          >
+          <a href="sign-page.html"
+            ><button type="button" class="btn btn-dark outside-button desktop-button">
+              <i></i>Sign up
+            </button></a
+          >
+          <a href="sign-page.html"
+            ><button type="button" name="mobile-button" class="btn btn-dark outside-button mobile-button">
               <i></i>Sign up
             </button></a
           >
@@ -197,35 +211,37 @@
           <a href="#">View all 500+ cities</a>
         </div>
         <div calss="map">
-          <img src="images/map.png" class="map-img" />
+          <img src="images/map.png" class="map-img desktop-map" />
+          <img src="images/map2.jpg" class="map-img mobile-map">
         </div>
       </div>
       <div class="cities-list">
-        <div class="list"><a href="#">Akron</a></div>
+        <div class="list hidden"><a href="#">Akron</a></div>
         <div class="list"><a href="#">Albuquerque</a></div>
-        <div class="list"><a href="#">Bridgeport</a></div>
+        <div class="list hidden"><a href="#">Bridgeport</a></div>
         <div class="list"><a href="#">Concord</a></div>
-        <div class="list"><a href="#">Dayton</a></div>
-        <div class="list"><a href="#">El Paso</a></div>
-        <div class="list"><a href="#">Hartford</a></div>
+        <div class="list hidden"><a href="#">Dayton</a></div>
+        <div class="list hidden"><a href="#">El Paso</a></div>
+        <div class="list hidden"><a href="#">Hartford</a></div>
         <div class="list"><a href="#">Houston</a></div>
         <div class="list"><a href="#">Indianapolis</a></div>
-        <div class="list"><a href="#">McAllen</a></div>
+        <div class="list hidden"><a href="#">McAllen</a></div>
         <div class="list"><a href="#">Mesa</a></div>
         <div class="list"><a href="#">Milwaukee</a></div>
         <div class="list"><a href="#">Nashvillie</a></div>
-        <div class="list"><a href="#">New orleans</a></div>
+        <div class="list hidden"><a href="#">New orleans</a></div>
         <div class="list"><a href="#">Oklahoma City</a></div>
-        <div class="list"><a href="#">Omaha</a></div>
-        <div class="list"><a href="#">Orlando</a></div>
-        <div class="list"><a href="#">Palm Bay</a></div>
+        <div class="list hidden"><a href="#">Omaha</a></div>
+        <div class="list hidden"><a href="#">Orlando</a></div>
+        <div class="list hidden"><a href="#">Palm Bay</a></div>
         <div class="list"><a href="#">Providence</a></div>
         <div class="list"><a href="#">Queens</a></div>
-        <div class="list"><a href="#">San Antonio</a></div>
-        <div class="list"><a href="#">Stony Brook</a></div>
+        <div class="list hidden"><a href="#">San Antonio</a></div>
+        <div class="list hidden"><a href="#">Stony Brook</a></div>
         <div class="list"><a href="#">Tucson</a></div>
         <div class="list"><a href="#">West Hollywood</a></div>
       </div>
+      <a class="mobile-a" href="#">View all 500+ cities</a>
       <div class="cities-heading">
         <h2>Countries with Foodies Eats</h2>
         <a href="#">View all countries</a>
@@ -261,6 +277,7 @@
         <div class="list"><a href="#">United Kingdom</a></div>
         <div class="list"><a href="#">United States</a></div>
       </div>
+      <a class="mobile-a" href="#">View all countries</a>
     </section>
     <footer class="footer-container">
       <hr />
